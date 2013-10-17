@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		26038EC2180FFC5500F133F2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26038EC1180FFC5500F133F2 /* UIKit.framework */; };
+		26038EC4180FFC5500F133F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26038EC3180FFC5500F133F2 /* Foundation.framework */; };
+		26038EC6180FFC5500F133F2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26038EC5180FFC5500F133F2 /* CoreGraphics.framework */; };
+		26038ECC180FFC5500F133F2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 26038ECA180FFC5500F133F2 /* InfoPlist.strings */; };
+		26038ECE180FFC5500F133F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 26038ECD180FFC5500F133F2 /* main.m */; };
+		26038ED2180FFC5500F133F2 /* CargoDamageReportAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 26038ED1180FFC5500F133F2 /* CargoDamageReportAppDelegate.m */; };
+		26038ED5180FFC5500F133F2 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26038ED3180FFC5500F133F2 /* MainStoryboard_iPhone.storyboard */; };
+		26038ED8180FFC5500F133F2 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26038ED6180FFC5500F133F2 /* MainStoryboard_iPad.storyboard */; };
+		26038EDB180FFC5500F133F2 /* CargoDamageReportFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26038EDA180FFC5500F133F2 /* CargoDamageReportFirstViewController.m */; };
+		26038EDD180FFC5500F133F2 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 26038EDC180FFC5500F133F2 /* first.png */; };
+		26038EDF180FFC5500F133F2 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26038EDE180FFC5500F133F2 /* first@2x.png */; };
+		26038EE2180FFC5500F133F2 /* CargoDamageReportSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26038EE1180FFC5500F133F2 /* CargoDamageReportSecondViewController.m */; };
+		26038EE4180FFC5500F133F2 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 26038EE3180FFC5500F133F2 /* second.png */; };
+		26038EE6180FFC5500F133F2 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26038EE5180FFC5500F133F2 /* second@2x.png */; };
+		26038EEE180FFC5600F133F2 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26038EED180FFC5600F133F2 /* SenTestingKit.framework */; };
+		26038EEF180FFC5600F133F2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26038EC1180FFC5500F133F2 /* UIKit.framework */; };
+		26038EF0180FFC5600F133F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26038EC3180FFC5500F133F2 /* Foundation.framework */; };
+		26038EF8180FFC5600F133F2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 26038EF6180FFC5600F133F2 /* InfoPlist.strings */; };
+		26038EFB180FFC5600F133F2 /* CargoDamageReportTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26038EFA180FFC5600F133F2 /* CargoDamageReportTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		26038EF1180FFC5600F133F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26038EB4180FFC5500F133F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26038EBC180FFC5500F133F2;
+			remoteInfo = CargoDamageReport;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		26038EBD180FFC5500F133F2 /* CargoDamageReport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CargoDamageReport.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		26038EC1180FFC5500F133F2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		26038EC3180FFC5500F133F2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		26038EC5180FFC5500F133F2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		26038EC9180FFC5500F133F2 /* CargoDamageReport-Info.plist */ = {isa = PBXFileReference; path = "CargoDamageReport-Info.plist"; sourceTree = "<group>"; };
+		26038ECB180FFC5500F133F2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		26038ECD180FFC5500F133F2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		26038ECF180FFC5500F133F2 /* CargoDamageReport-Prefix.pch */ = {isa = PBXFileReference; path = "CargoDamageReport-Prefix.pch"; sourceTree = "<group>"; };
+		26038ED0180FFC5500F133F2 /* CargoDamageReportAppDelegate.h */ = {isa = PBXFileReference; path = CargoDamageReportAppDelegate.h; sourceTree = "<group>"; };
+		26038ED1180FFC5500F133F2 /* CargoDamageReportAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CargoDamageReportAppDelegate.m; sourceTree = "<group>"; };
+		26038ED4180FFC5500F133F2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		26038ED7180FFC5500F133F2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		26038ED9180FFC5500F133F2 /* CargoDamageReportFirstViewController.h */ = {isa = PBXFileReference; path = CargoDamageReportFirstViewController.h; sourceTree = "<group>"; };
+		26038EDA180FFC5500F133F2 /* CargoDamageReportFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CargoDamageReportFirstViewController.m; sourceTree = "<group>"; };
+		26038EDC180FFC5500F133F2 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		26038EDE180FFC5500F133F2 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		26038EE0180FFC5500F133F2 /* CargoDamageReportSecondViewController.h */ = {isa = PBXFileReference; path = CargoDamageReportSecondViewController.h; sourceTree = "<group>"; };
+		26038EE1180FFC5500F133F2 /* CargoDamageReportSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CargoDamageReportSecondViewController.m; sourceTree = "<group>"; };
+		26038EE3180FFC5500F133F2 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		26038EE5180FFC5500F133F2 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		26038EEC180FFC5600F133F2 /* CargoDamageReportTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CargoDamageReportTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		26038EED180FFC5600F133F2 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		26038EF5180FFC5600F133F2 /* CargoDamageReportTests-Info.plist */ = {isa = PBXFileReference; path = "CargoDamageReportTests-Info.plist"; sourceTree = "<group>"; };
+		26038EF7180FFC5600F133F2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		26038EF9180FFC5600F133F2 /* CargoDamageReportTests.h */ = {isa = PBXFileReference; path = CargoDamageReportTests.h; sourceTree = "<group>"; };
+		26038EFA180FFC5600F133F2 /* CargoDamageReportTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CargoDamageReportTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		26038EBA180FFC5500F133F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26038EC2180FFC5500F133F2 /* UIKit.framework in Frameworks */,
+				26038EC4180FFC5500F133F2 /* Foundation.framework in Frameworks */,
+				26038EC6180FFC5500F133F2 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26038EE8180FFC5600F133F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26038EEE180FFC5600F133F2 /* SenTestingKit.framework in Frameworks */,
+				26038EEF180FFC5600F133F2 /* UIKit.framework in Frameworks */,
+				26038EF0180FFC5600F133F2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		26038EB2180FFC5500F133F2 = {
+			isa = PBXGroup;
+			children = (
+				26038EC7180FFC5500F133F2 /* CargoDamageReport */,
+				26038EF3180FFC5600F133F2 /* CargoDamageReportTests */,
+				26038EC0180FFC5500F133F2 /* Frameworks */,
+				26038EBE180FFC5500F133F2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		26038EBE180FFC5500F133F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				26038EBD180FFC5500F133F2 /* CargoDamageReport.app */,
+				26038EEC180FFC5600F133F2 /* CargoDamageReportTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		26038EC0180FFC5500F133F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				26038EC1180FFC5500F133F2 /* UIKit.framework */,
+				26038EC3180FFC5500F133F2 /* Foundation.framework */,
+				26038EC5180FFC5500F133F2 /* CoreGraphics.framework */,
+				26038EED180FFC5600F133F2 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		26038EC7180FFC5500F133F2 /* CargoDamageReport */ = {
+			isa = PBXGroup;
+			children = (
+				26038ED0180FFC5500F133F2 /* CargoDamageReportAppDelegate.h */,
+				26038ED1180FFC5500F133F2 /* CargoDamageReportAppDelegate.m */,
+				26038ED3180FFC5500F133F2 /* MainStoryboard_iPhone.storyboard */,
+				26038ED6180FFC5500F133F2 /* MainStoryboard_iPad.storyboard */,
+				26038ED9180FFC5500F133F2 /* CargoDamageReportFirstViewController.h */,
+				26038EDA180FFC5500F133F2 /* CargoDamageReportFirstViewController.m */,
+				26038EDC180FFC5500F133F2 /* first.png */,
+				26038EDE180FFC5500F133F2 /* first@2x.png */,
+				26038EE0180FFC5500F133F2 /* CargoDamageReportSecondViewController.h */,
+				26038EE1180FFC5500F133F2 /* CargoDamageReportSecondViewController.m */,
+				26038EE3180FFC5500F133F2 /* second.png */,
+				26038EE5180FFC5500F133F2 /* second@2x.png */,
+				26038EC8180FFC5500F133F2 /* Supporting Files */,
+			);
+			path = CargoDamageReport;
+			sourceTree = "<group>";
+		};
+		26038EC8180FFC5500F133F2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				26038EC9180FFC5500F133F2 /* CargoDamageReport-Info.plist */,
+				26038ECA180FFC5500F133F2 /* InfoPlist.strings */,
+				26038ECD180FFC5500F133F2 /* main.m */,
+				26038ECF180FFC5500F133F2 /* CargoDamageReport-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		26038EF3180FFC5600F133F2 /* CargoDamageReportTests */ = {
+			isa = PBXGroup;
+			children = (
+				26038EF9180FFC5600F133F2 /* CargoDamageReportTests.h */,
+				26038EFA180FFC5600F133F2 /* CargoDamageReportTests.m */,
+				26038EF4180FFC5600F133F2 /* Supporting Files */,
+			);
+			path = CargoDamageReportTests;
+			sourceTree = "<group>";
+		};
+		26038EF4180FFC5600F133F2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				26038EF5180FFC5600F133F2 /* CargoDamageReportTests-Info.plist */,
+				26038EF6180FFC5600F133F2 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		26038EBC180FFC5500F133F2 /* CargoDamageReport */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26038EFE180FFC5600F133F2 /* Build configuration list for PBXNativeTarget "CargoDamageReport" */;
+			buildPhases = (
+				26038EB9180FFC5500F133F2 /* Sources */,
+				26038EBA180FFC5500F133F2 /* Frameworks */,
+				26038EBB180FFC5500F133F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CargoDamageReport;
+			productName = CargoDamageReport;
+			productReference = 26038EBD180FFC5500F133F2 /* CargoDamageReport.app */;
+			productType = "com.apple.product-type.application";
+		};
+		26038EEB180FFC5600F133F2 /* CargoDamageReportTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26038F01180FFC5600F133F2 /* Build configuration list for PBXNativeTarget "CargoDamageReportTests" */;
+			buildPhases = (
+				26038EE7180FFC5600F133F2 /* Sources */,
+				26038EE8180FFC5600F133F2 /* Frameworks */,
+				26038EE9180FFC5600F133F2 /* Resources */,
+				26038EEA180FFC5600F133F2 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26038EF2180FFC5600F133F2 /* PBXTargetDependency */,
+			);
+			name = CargoDamageReportTests;
+			productName = CargoDamageReportTests;
+			productReference = 26038EEC180FFC5600F133F2 /* CargoDamageReportTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		26038EB4180FFC5500F133F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CargoDamageReport;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Capra consulting";
+			};
+			buildConfigurationList = 26038EB7180FFC5500F133F2 /* Build configuration list for PBXProject "CargoDamageReport" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 26038EB2180FFC5500F133F2;
+			productRefGroup = 26038EBE180FFC5500F133F2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				26038EBC180FFC5500F133F2 /* CargoDamageReport */,
+				26038EEB180FFC5600F133F2 /* CargoDamageReportTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		26038EBB180FFC5500F133F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26038ECC180FFC5500F133F2 /* InfoPlist.strings in Resources */,
+				26038ED5180FFC5500F133F2 /* MainStoryboard_iPhone.storyboard in Resources */,
+				26038ED8180FFC5500F133F2 /* MainStoryboard_iPad.storyboard in Resources */,
+				26038EDD180FFC5500F133F2 /* first.png in Resources */,
+				26038EDF180FFC5500F133F2 /* first@2x.png in Resources */,
+				26038EE4180FFC5500F133F2 /* second.png in Resources */,
+				26038EE6180FFC5500F133F2 /* second@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26038EE9180FFC5600F133F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26038EF8180FFC5600F133F2 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		26038EEA180FFC5600F133F2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		26038EB9180FFC5500F133F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26038ECE180FFC5500F133F2 /* main.m in Sources */,
+				26038ED2180FFC5500F133F2 /* CargoDamageReportAppDelegate.m in Sources */,
+				26038EDB180FFC5500F133F2 /* CargoDamageReportFirstViewController.m in Sources */,
+				26038EE2180FFC5500F133F2 /* CargoDamageReportSecondViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26038EE7180FFC5600F133F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26038EFB180FFC5600F133F2 /* CargoDamageReportTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		26038EF2180FFC5600F133F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26038EBC180FFC5500F133F2 /* CargoDamageReport */;
+			targetProxy = 26038EF1180FFC5600F133F2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		26038ECA180FFC5500F133F2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				26038ECB180FFC5500F133F2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		26038ED3180FFC5500F133F2 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				26038ED4180FFC5500F133F2 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		26038ED6180FFC5500F133F2 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				26038ED7180FFC5500F133F2 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		26038EF6180FFC5600F133F2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				26038EF7180FFC5600F133F2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		26038EFC180FFC5600F133F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		26038EFD180FFC5600F133F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		26038EFF180FFC5600F133F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CargoDamageReport/CargoDamageReport-Prefix.pch";
+				INFOPLIST_FILE = "CargoDamageReport/CargoDamageReport-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		26038F00180FFC5600F133F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CargoDamageReport/CargoDamageReport-Prefix.pch";
+				INFOPLIST_FILE = "CargoDamageReport/CargoDamageReport-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		26038F02180FFC5600F133F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CargoDamageReport.app/CargoDamageReport";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CargoDamageReport/CargoDamageReport-Prefix.pch";
+				INFOPLIST_FILE = "CargoDamageReportTests/CargoDamageReportTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		26038F03180FFC5600F133F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CargoDamageReport.app/CargoDamageReport";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CargoDamageReport/CargoDamageReport-Prefix.pch";
+				INFOPLIST_FILE = "CargoDamageReportTests/CargoDamageReportTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		26038EB7180FFC5500F133F2 /* Build configuration list for PBXProject "CargoDamageReport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26038EFC180FFC5600F133F2 /* Debug */,
+				26038EFD180FFC5600F133F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26038EFE180FFC5600F133F2 /* Build configuration list for PBXNativeTarget "CargoDamageReport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26038EFF180FFC5600F133F2 /* Debug */,
+				26038F00180FFC5600F133F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		26038F01180FFC5600F133F2 /* Build configuration list for PBXNativeTarget "CargoDamageReportTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26038F02180FFC5600F133F2 /* Debug */,
+				26038F03180FFC5600F133F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 26038EB4180FFC5500F133F2 /* Project object */;
+}
