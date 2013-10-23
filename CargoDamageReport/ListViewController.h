@@ -10,6 +10,6 @@
 #import "DetailsController.h"
 #import "DetailTableCell.h"
 
-@interface CargoDamageReportListViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
+@interface ListViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
 
 @end

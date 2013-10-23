@@ -6,13 +6,13 @@
 //  Copyright (c) 2013 Capra consulting. All rights reserved.
 //
 
-#import "CargoDamageReportListViewController.h"
+#import "ListViewController.h"
 
-@interface CargoDamageReportListViewController ()
+@interface ListViewController ()
 
 @end
 
-@implementation CargoDamageReportListViewController
+@implementation ListViewController
 
 {
     NSArray *tableData;

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DamageViewController : UIViewController
-
+@interface DamageViewController : UIViewController<UITextFieldDelegate>
+- (BOOL)textFieldShouldReturn:(UITextField *)textField;
+- (IBAction) clickedBackground;
 @end

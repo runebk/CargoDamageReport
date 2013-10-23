@@ -35,4 +35,18 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(BOOL)textFieldShouldReturn:(UITextField *)textField{
+    
+    [textField resignFirstResponder];
+    
+    return YES;
+}
+
+- (IBAction) clickedBackground
+{
+    [self.view endEditing:YES]; //make the view end editing!
+    
+}
+
+
 @end
