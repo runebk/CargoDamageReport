@@ -7,6 +7,7 @@
 //
 
 #import "VesselViewController.h"
+#import "HTAutocompleteManager.h"
 
 @interface VesselViewController ()
 
@@ -19,13 +20,16 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
- 
+    // Release any retained subviews of the main view
+    // Set a default data source for all instances.  Otherwise, you can specify the data source on individual text fields via the autocompleteDataSource property
+    [HTAutocompleteTextField setDefaultAutocompleteDataSource:[HTAutocompleteManager sharedManager]];
+    
+    self.vessel.autocompleteType = HTAutocompleteTypeVessel;
 }
 
 - (void)viewDidUnload
 {
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

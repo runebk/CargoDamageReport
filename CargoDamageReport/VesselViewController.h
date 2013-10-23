@@ -7,17 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HTAutocompleteTextField.h"
+#import "HTEmailAutocompleteTextField.h"
 
 @interface VesselViewController : UIViewController <UITextFieldDelegate>{
-    UITextField  *vessel;
     UITextField  *voyageNo;
     UITextField  *imoNo;
     UITextField  *location;
     UITextField  *whoNoted;
     UIDatePicker *dateDamage;
 }
-
-@property (nonatomic, retain) IBOutlet UITextField *vessel;
+@property (unsafe_unretained, nonatomic) IBOutlet HTAutocompleteTextField *vessel;
+//@property (nonatomic, retain) IBOutlet UITextField *vessel;
 @property (nonatomic, retain) IBOutlet UITextField *voyageNo;
 @property (nonatomic, retain) IBOutlet UITextField *imoNo;
 @property (nonatomic, retain) IBOutlet UITextField *location;

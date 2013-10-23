@@ -173,6 +173,9 @@
 		265A574718116EF600D521DD /* waste_basket.png in Resources */ = {isa = PBXBuildFile; fileRef = 265A56B918116EF600D521DD /* waste_basket.png */; };
 		265A57491811750E00D521DD /* Hoegh logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 265A57481811750E00D521DD /* Hoegh logo.jpg */; };
 		265A574B18117B2A00D521DD /* vessel.png in Resources */ = {isa = PBXBuildFile; fileRef = 265A574A18117B2A00D521DD /* vessel.png */; };
+		26BF718D1817F33F00A8CAA4 /* HTAutocompleteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BF718A1817F33F00A8CAA4 /* HTAutocompleteManager.m */; };
+		26BF718E1817F33F00A8CAA4 /* HTAutocompleteTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BF718C1817F33F00A8CAA4 /* HTAutocompleteTextField.m */; };
+		26BF7195181803E300A8CAA4 /* HTEmailAutocompleteTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BF7194181803E300A8CAA4 /* HTEmailAutocompleteTextField.m */; };
 		26C534211816887F0000C4B8 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C534201816887F0000C4B8 /* ListViewController.m */; };
 		26C53424181690DD0000C4B8 /* DetailsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C53423181690DD0000C4B8 /* DetailsController.m */; };
 		26C534291816A8A90000C4B8 /* DetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26C534281816A8A90000C4B8 /* DetailCell.xib */; };
@@ -515,6 +518,12 @@
 		265A56B918116EF600D521DD /* waste_basket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = waste_basket.png; sourceTree = "<group>"; };
 		265A57481811750E00D521DD /* Hoegh logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Hoegh logo.jpg"; sourceTree = "<group>"; };
 		265A574A18117B2A00D521DD /* vessel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vessel.png; sourceTree = "<group>"; };
+		26BF71891817F33F00A8CAA4 /* HTAutocompleteManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTAutocompleteManager.h; sourceTree = "<group>"; };
+		26BF718A1817F33F00A8CAA4 /* HTAutocompleteManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTAutocompleteManager.m; sourceTree = "<group>"; };
+		26BF718B1817F33F00A8CAA4 /* HTAutocompleteTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTAutocompleteTextField.h; sourceTree = "<group>"; };
+		26BF718C1817F33F00A8CAA4 /* HTAutocompleteTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTAutocompleteTextField.m; sourceTree = "<group>"; };
+		26BF7193181803E300A8CAA4 /* HTEmailAutocompleteTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTEmailAutocompleteTextField.h; sourceTree = "<group>"; };
+		26BF7194181803E300A8CAA4 /* HTEmailAutocompleteTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTEmailAutocompleteTextField.m; sourceTree = "<group>"; };
 		26C5341F1816887F0000C4B8 /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
 		26C534201816887F0000C4B8 /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
 		26C53422181690DD0000C4B8 /* DetailsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsController.h; sourceTree = "<group>"; };
@@ -736,6 +745,7 @@
 		26038EC7180FFC5500F133F2 /* CargoDamageReport */ = {
 			isa = PBXGroup;
 			children = (
+				26BF718F1817F34700A8CAA4 /* AutoComplete */,
 				2646AE011817D379007AF77A /* AppDelegates */,
 				2646AE001817D356007AF77A /* Storyboard */,
 				2646ADFF1817D327007AF77A /* ListView */,
@@ -1044,6 +1054,19 @@
 				265A56B918116EF600D521DD /* waste_basket.png */,
 			);
 			path = standard;
+			sourceTree = "<group>";
+		};
+		26BF718F1817F34700A8CAA4 /* AutoComplete */ = {
+			isa = PBXGroup;
+			children = (
+				26BF7193181803E300A8CAA4 /* HTEmailAutocompleteTextField.h */,
+				26BF7194181803E300A8CAA4 /* HTEmailAutocompleteTextField.m */,
+				26BF71891817F33F00A8CAA4 /* HTAutocompleteManager.h */,
+				26BF718A1817F33F00A8CAA4 /* HTAutocompleteManager.m */,
+				26BF718B1817F33F00A8CAA4 /* HTAutocompleteTextField.h */,
+				26BF718C1817F33F00A8CAA4 /* HTAutocompleteTextField.m */,
+			);
+			name = AutoComplete;
 			sourceTree = "<group>";
 		};
 		26D7BD7F1816BA0F001B1BAA /* icons */ = {
@@ -1619,12 +1642,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26BF7195181803E300A8CAA4 /* HTEmailAutocompleteTextField.m in Sources */,
 				26C53424181690DD0000C4B8 /* DetailsController.m in Sources */,
 				26038ECE180FFC5500F133F2 /* main.m in Sources */,
 				26C534211816887F0000C4B8 /* ListViewController.m in Sources */,
 				2646ADFE1817D2BE007AF77A /* DamageViewController.m in Sources */,
 				26038ED2180FFC5500F133F2 /* CargoDamageReportAppDelegate.m in Sources */,
 				26038EDB180FFC5500F133F2 /* VesselViewController.m in Sources */,
+				26BF718D1817F33F00A8CAA4 /* HTAutocompleteManager.m in Sources */,
+				26BF718E1817F33F00A8CAA4 /* HTAutocompleteTextField.m in Sources */,
 				26038EE2180FFC5500F133F2 /* CargoViewController.m in Sources */,
 				260E917D1810229900FCA309 /* NICSignatureView.m in Sources */,
 				263B150F1811253900EC8C8D /* PhotographViewController.m in Sources */,
