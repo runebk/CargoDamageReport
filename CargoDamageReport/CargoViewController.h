@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CargoDamageReportSecondViewController : UIViewController
+@interface CargoViewController : UIViewController <UITextFieldDelegate>
+- (BOOL)textFieldShouldReturn:(UITextField *)textField;
+- (IBAction) clickedBackground;
 
 @end

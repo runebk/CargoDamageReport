@@ -6,13 +6,13 @@
 //  Copyright (c) 2013 Capra consulting. All rights reserved.
 //
 
-#import "CargoDamageReportSecondViewController.h"
+#import "CargoViewController.h"
 
-@interface CargoDamageReportSecondViewController ()
+@interface CargoViewController ()
 
 @end
 
-@implementation CargoDamageReportSecondViewController
+@implementation CargoViewController
 
 - (void)viewDidLoad
 {
@@ -33,6 +33,19 @@
     } else {
         return YES;
     }
+}
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField{
+
+    [textField resignFirstResponder];
+    
+    return YES;
+}
+
+- (IBAction) clickedBackground
+{
+    [self.view endEditing:YES]; //make the view end editing!
+    
 }
 
 @end

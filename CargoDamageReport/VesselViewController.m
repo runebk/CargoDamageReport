@@ -6,18 +6,20 @@
 //  Copyright (c) 2013 Capra consulting. All rights reserved.
 //
 
-#import "CargoDamageReportFirstViewController.h"
+#import "VesselViewController.h"
 
-@interface CargoDamageReportFirstViewController ()
+@interface VesselViewController ()
 
 @end
 
-@implementation CargoDamageReportFirstViewController
+@implementation VesselViewController
+@synthesize vessel,voyageNo,imoNo,location,whoNoted, datedamage;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+ 
 }
 
 - (void)viewDidUnload
@@ -33,6 +35,19 @@
     } else {
         return YES;
     }
+}
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField{
+   
+    [textField resignFirstResponder];
+    
+    return YES;
+}
+
+- (IBAction) clickedBackground
+{
+    [self.view endEditing:YES]; //make the view end editing!
+    
 }
 
 @end
