@@ -26,6 +26,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.damageOccur.layer.borderWidth = 2.0f;
+    self.damageOccur.layer.borderColor = [[UIColor grayColor] CGColor];
+    
+    self.remarks.layer.borderWidth = 2.0f;
+    self.remarks.layer.borderColor = [[UIColor grayColor] CGColor];
 	// Do any additional setup after loading the view.
 }
 

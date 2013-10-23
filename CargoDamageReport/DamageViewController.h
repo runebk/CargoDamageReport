@@ -11,4 +11,6 @@
 @interface DamageViewController : UIViewController<UITextFieldDelegate>
 - (BOOL)textFieldShouldReturn:(UITextField *)textField;
 - (IBAction) clickedBackground;
+@property (nonatomic, retain) IBOutlet UITextView *damageOccur;
+@property (nonatomic, retain) IBOutlet UITextView *remarks;
 @end

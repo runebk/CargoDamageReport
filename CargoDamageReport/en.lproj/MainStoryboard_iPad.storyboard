@@ -666,14 +666,14 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <color key="textColor" red="0.21568629145622253" green="0.29019609093666077" blue="0.38823533058166504" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" indicatorStyle="white" text="Fill in here.." id="KKW-bV-wOl">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" indicatorStyle="white" id="KKW-bV-wOl">
                                 <rect key="frame" x="44" y="501" width="662" height="175"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <connections>
-                                    <outlet property="delegate" destination="3aO-lL-XSe" id="bUd-9F-r5q"/>
+                                    <outlet property="delegate" destination="3aO-lL-XSe" id="Vad-0s-1jl"/>
                                 </connections>
                             </textView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Remarks:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="D85-hI-VkJ">
@@ -708,6 +708,10 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Damage" image="medical_case.png" id="GII-Jn-Ngo"/>
+                    <connections>
+                        <outlet property="damageOccur" destination="KKW-bV-wOl" id="5PP-b4-Ifa"/>
+                        <outlet property="remarks" destination="ucd-xA-4z5" id="H6B-rg-8tE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N3j-dx-N63" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
