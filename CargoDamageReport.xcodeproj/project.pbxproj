@@ -745,18 +745,10 @@
 		26038EC7180FFC5500F133F2 /* CargoDamageReport */ = {
 			isa = PBXGroup;
 			children = (
-				26BF718F1817F34700A8CAA4 /* AutoComplete */,
-				2646AE011817D379007AF77A /* AppDelegates */,
-				2646AE001817D356007AF77A /* Storyboard */,
-				2646ADFF1817D327007AF77A /* ListView */,
-				2646ADFB1817D28D007AF77A /* Damage */,
-				2646ADFA1817D252007AF77A /* CustomCell */,
-				2646ADF81817D229007AF77A /* Signature */,
-				2646ADF71817D21C007AF77A /* Images */,
-				2646ADF61817D1FA007AF77A /* Cargo */,
-				2646ADF41817D1DC007AF77A /* Vessel */,
-				265A562918116EF600D521DD /* Icons */,
-				2646ADF21817D19D007AF77A /* Photograph */,
+				26BF71991819485800A8CAA4 /* Model */,
+				26BF71981819480F00A8CAA4 /* Utils */,
+				26BF7197181947EE00A8CAA4 /* Assets */,
+				26BF71961819478D00A8CAA4 /* GUI */,
 				26038EC8180FFC5500F133F2 /* Supporting Files */,
 			);
 			path = CargoDamageReport;
@@ -865,15 +857,6 @@
 				26C534201816887F0000C4B8 /* ListViewController.m */,
 			);
 			name = ListView;
-			sourceTree = "<group>";
-		};
-		2646AE001817D356007AF77A /* Storyboard */ = {
-			isa = PBXGroup;
-			children = (
-				26038ED3180FFC5500F133F2 /* MainStoryboard_iPhone.storyboard */,
-				26038ED6180FFC5500F133F2 /* MainStoryboard_iPad.storyboard */,
-			);
-			name = Storyboard;
 			sourceTree = "<group>";
 		};
 		2646AE011817D379007AF77A /* AppDelegates */ = {
@@ -1067,6 +1050,47 @@
 				26BF718C1817F33F00A8CAA4 /* HTAutocompleteTextField.m */,
 			);
 			name = AutoComplete;
+			sourceTree = "<group>";
+		};
+		26BF71961819478D00A8CAA4 /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				26038ED3180FFC5500F133F2 /* MainStoryboard_iPhone.storyboard */,
+				26038ED6180FFC5500F133F2 /* MainStoryboard_iPad.storyboard */,
+				2646AE011817D379007AF77A /* AppDelegates */,
+				2646ADF21817D19D007AF77A /* Photograph */,
+				2646ADF41817D1DC007AF77A /* Vessel */,
+				2646ADF61817D1FA007AF77A /* Cargo */,
+				2646ADF81817D229007AF77A /* Signature */,
+				2646ADFA1817D252007AF77A /* CustomCell */,
+				2646ADFB1817D28D007AF77A /* Damage */,
+				2646ADFF1817D327007AF77A /* ListView */,
+			);
+			name = GUI;
+			sourceTree = "<group>";
+		};
+		26BF7197181947EE00A8CAA4 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				2646ADF71817D21C007AF77A /* Images */,
+				265A562918116EF600D521DD /* Icons */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		26BF71981819480F00A8CAA4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				26BF718F1817F34700A8CAA4 /* AutoComplete */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		26BF71991819485800A8CAA4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		26D7BD7F1816BA0F001B1BAA /* icons */ = {
@@ -1286,6 +1310,11 @@
 				CLASSPREFIX = CargoDamageReport;
 				LastUpgradeCheck = 0430;
 				ORGANIZATIONNAME = "Capra consulting";
+				TargetAttributes = {
+					26038EBC180FFC5500F133F2 = {
+						DevelopmentTeam = 2SW3T8JY96;
+					};
+				};
 			};
 			buildConfigurationList = 26038EB7180FFC5500F133F2 /* Build configuration list for PBXProject "CargoDamageReport" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1762,11 +1791,14 @@
 		26038EFF180FFC5600F133F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CargoDamageReport/CargoDamageReport-Prefix.pch";
 				INFOPLIST_FILE = "CargoDamageReport/CargoDamageReport-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1774,11 +1806,14 @@
 		26038F00180FFC5600F133F2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CargoDamageReport/CargoDamageReport-Prefix.pch";
 				INFOPLIST_FILE = "CargoDamageReport/CargoDamageReport-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
